@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="p5.min.js"></script>
+        <script> 
+            function setup(){
+                createCanvas(600, 600)
+                angleMode(DEGREES)
+                background("")
+            }
+
+             function draw(){
+                let bgColor = map(mouseX, 0, 600, 0, 255);
+                background(10, bgColor, 250);
+                //......
+                stroke(0, 0, 0)
+                strokeWeight(5)
+                arc(300, 250, /*...*/, mouseY, 31, 150)
+
+            }
+        </script>   
+</body>
+</html>
