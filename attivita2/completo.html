@@ -15,15 +15,15 @@
             }
 
              function draw(){
+                // Mappa la posizione orizzontale del mouse (mouseX) a un valore di colore tra 0 e 255
                 let bgColor = map(mouseX, 0, 600, 0, 255);
-                /*
-                    Formula per il map:
-                        bgColor = (mouseX * 255)/600 
-                */
-                background(10, bgColor, 250);
-                noFill()
-                stroke(0, 0, 0)
-                strokeWeight(5)
+                background(10, bgColor, 250); // Aggiorna il colore di sfondo in base alla posizione del mouse
+                noFill() // Rimuove il riempimento per le forme, disegnando solo i contorni
+                stroke(0, 0, 0) // Imposta il colore del bordo su nero
+                strokeWeight(5) // Imposta lo spessore del bordo a 5 pixel
+
+                // Disegna un arco al centro della tela (300, 250) con una larghezza di 200 pixel.
+                // L'altezza dell'arco è controllata dalla posizione verticale del mouse (mouseY)
                 arc(300, 250, 200, mouseY, 31, 150)
             }
         </script>   
